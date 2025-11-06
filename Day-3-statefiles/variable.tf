@@ -4,6 +4,6 @@ variable "ami_id" {
 }
 variable "type" {
     description = "passing values to instance type "
-    default = "t3.micro"
+    default = "t2.micro"
     type = string
 }

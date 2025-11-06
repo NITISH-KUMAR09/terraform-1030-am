@@ -1,7 +1,10 @@
 resource "aws_instance" "name" {
-  instance_type =var.type
-  ami = var.ami_id
+  ami = "ami-01760eea5c574eb86"
+  instance_type = "t3.micro"
   subnet_id = aws_subnet.name.id
+  tags = {
+    name="dev"
+  }
   
   
 }
